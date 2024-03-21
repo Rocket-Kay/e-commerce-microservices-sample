@@ -26,7 +26,7 @@ COPY . .
 
 RUN npm run build
 
-FROM nginx:1.21.6-alpine
+FROM nginx:1.25.4-alpine
 COPY nginx.conf /etc/nginx/nginx.conf
 # SET default APP_BUILD_DIR path
 ARG APP_BUILD_DIR=/src/app
