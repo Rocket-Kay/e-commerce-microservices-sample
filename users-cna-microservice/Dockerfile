@@ -1,5 +1,5 @@
 # Install python in the container
-FROM python:3.10.5-alpine3.16
+FROM python:3.12.0a7-alpine3.16
 RUN pip install pipenv
 WORKDIR /usr/src/app
 # Copy the Pipfile
